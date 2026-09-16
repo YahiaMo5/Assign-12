@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { MovieDetails } from "./pages/MovieDetails";
-import "./App.css";
+import "./index.css";
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
                         <Route
                             path="*"
                             element={
-                                <div style={{ textAlign: "center", padding: "40px" }}>
+                                <div className="status-message">
                                     <Link to="/">
                                         back to movies
                                     </Link>
